@@ -2,7 +2,7 @@
 
 A web-based application that simulates coin tosses with visual animations, statistical analysis, and probability visualization. Perfect for educational purposes or just for fun!
 
-![Coin Toss Simulator](images/screenshot-main.png)
+![Coin Toss Simulator](images/main.png)
 
 ## 🌟 Features
 
@@ -17,7 +17,7 @@ A web-based application that simulates coin tosses with visual animations, stati
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-live-demo-link-here.com)
+[View Live Demo]([https://your-live-demo-link-here.com](https://coin-toss-simulator-2.onrender.com))
 
 *Note: Replace with your actual deployment link*
 
@@ -116,4 +116,4 @@ Animations: CSS 3D transforms and transitions
 Deploy to Render
 
 For Live Demo
-[View Live Demo](https://your-live-demo-link-here.com)
+[View Live Demo]([https://your-live-demo-link-here.com](https://coin-toss-simulator-2.onrender.com))

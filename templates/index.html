@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Toss Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Coin Toss Simulator</h1>
+        
+        <div class="coin-animation-section">
+            <div class="coin-container">
+                <div class="coin" id="animatedCoin">
+                    <div class="front">H</div>
+                    <div class="back">T</div>
+                </div>
+            </div>
+            <div class="animation-controls">
+                <button id="tossSingleButton">Toss Single Coin</button>
+            </div>
+        </div>
+        
+        <div class="input-section">
+            <label for="tossCount">Number of tosses:</label>
+            <input type="number" id="tossCount" min="1" value="10">
+            <button id="tossButton">Toss Multiple Coins</button>
+            <button id="resetButton">Reset</button>
+        </div>
+        
+        <div class="results">
+            <h2>Results</h2>
+            <div class="counters">
+                <div class="counter head">
+                    <span>Heads: </span>
+                    <span id="headCount">0</span>
+                    <span id="headPercent">(0% - 0/0)</span>
+                </div>
+                <div class="counter tail">
+                    <span>Tails: </span>
+                    <span id="tailCount">0</span>
+                    <span id="tailPercent">(0% - 0/0)</span>
+                </div>
+            </div>
+            
+            <div class="charts-container">
+                <div class="chart-box">
+                    <h3>Coin Toss Results</h3>
+                    <div class="chart-container">
+                        <canvas id="resultsChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-box">
+                    <h3>Normal Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="normalDistributionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="toss-history">
+                <h3>Toss History</h3>
+                <div id="historyList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

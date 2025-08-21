@@ -19,7 +19,7 @@ A web-based application that simulates coin tosses with visual animations, stati
 
 [View Live Demo](https://coin-toss-simulator-2.onrender.com)
 
-*Note: Replace with your actual deployment link*
+
 
 ## 📸 Screenshots
 
